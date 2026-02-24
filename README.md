@@ -23,6 +23,5 @@ npm run dev
 ```
 
 Tarayicida http://localhost:5173 adresini ac.
+![Uploading Ekran Resmi 2026-02-24 21.33.38.png…]()
 
-## Ekran Goruntusu
-<img width="705" height="570" alt="Ekran Resmi 2026-02-24 22 04 44" src="https://github.com/user-attachments/assets/0c538742-3a03-460b-a899-65d0759f4c7e" />
