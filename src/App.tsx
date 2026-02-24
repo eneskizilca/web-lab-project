@@ -8,6 +8,10 @@ function App() {
       <h2>LAB -1</h2>
       <p>Ad Soyad: Enes Kizilca</p>
       <p>Öğrenci No: 235541116</p>
+      <p>Yaş: 23</p>
+      <p>Adres: Ankara</p>
+      <p>Hobiler: Bissiklet sürmek, seyahat etmek</p>
+      <p>Olmak istediğim ideal alan: DevOps & Cloud Engineer</p>
     </div>
   )
 }
