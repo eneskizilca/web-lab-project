@@ -51,6 +51,26 @@ select {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #ffffff;
+  /* İçi siyah olma sorununu çözer */
+  color: #333333;
+  /* İçine yazılan yazının rengi */
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  background-color: #2563EB;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #1E3A8A;
 }
 
 .error-msg {
