@@ -24,5 +24,6 @@ npm run dev
 
 Tarayicida http://localhost:5173 adresini ac.
 
-<img width="609" height="569" alt="Ekran Resmi 2026-02-24 21 33 38" src="https://github.com/user-attachments/assets/829517be-3800-42d5-ad60-f69fa59661eb" />
+<img width="1800" height="1039" alt="Ekran Resmi 2026-02-24 23 43 44" src="https://github.com/user-attachments/assets/20099404-acb8-4b23-81ce-b43e5cd8caa1" />
+
 
