@@ -283,3 +283,48 @@ footer {
   padding-bottom: var(--space-lg);
   margin-top: auto;
 }
+
+/* ===== TABLET (640px ve üzeri) ===== */
+@media (min-width: 640px) {
+  section {
+    padding: var(--space-2xl) var(--space-xl);
+  }
+
+  /* Hakkımda yatay düzen */
+  #hakkimda {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: var(--space-lg);
+  }
+
+  #hakkimda figure {
+    flex-shrink: 0;
+    margin-right: var(--space-md);
+  }
+
+  /* Form butonu tam genişlik olmaktan çıkar */
+  button[type="submit"] {
+    width: auto;
+  }
+}
+
+/* ===== MASAÜSTÜ (1024px ve üzeri) ===== */
+@media (min-width: 1024px) {
+
+  /* İçerik genişliğini sınırla */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: var(--space-3xl) var(--space-xl);
+  }
+
+  /* Proje kartları en az 3 sütun */
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
