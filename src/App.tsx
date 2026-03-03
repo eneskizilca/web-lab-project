@@ -22,23 +22,28 @@ function App() {
       <main id="main-content">
         {/* Hakkımda Bölümü (Uygulama-1 ve Uygulama-5) */}
         <section id="hakkimda">
-          {/* Sayfada tek h1 olmalı, hiyerarşi buradan başlıyor (Uygulama-2) */}
           <h1>Enes Kızılca - Kişisel Portfolyo</h1>
 
-          <figure>
-            {/* Alt metin ekran okuyucular için kritik (Uygulama-2) */}
-            <img src="/profil.png" alt="Enes Kızılca'nın profil fotoğrafı" />
-            <figcaption>Enes Kızılca</figcaption>
-          </figure>
+          {/* Sadece fotoğraf ve metinleri yan yana dizecek olan ana taşıyıcı */}
+          <div className="about-content">
+            <figure>
+              <img src="/profil.jpg" alt="Enes Kızılca'nın profil fotoğrafı" />
+              <figcaption>Enes Kızılca</figcaption>
+            </figure>
 
-          <h2>Hakkımda</h2>
-          <p>Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. DevOps, SRE ve Platform Mühendisliği alanlarına odaklanıyorum. AWS, CI/CD ve tam yığın (full-stack) geliştirme süreçlerinde deneyimliyim.</p>
-          <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
-            <li>AWS & Bulut Teknolojileri</li>
-            <li>CI/CD Süreçleri</li>
-            <li>React Native</li>
-            <li>DevOps & SRE</li>
-          </ul>
+            {/* Metinleri ve etiketleri tek bir sütun/blok olarak tutacak taşıyıcı */}
+            <div className="about-text">
+              <h2>Hakkımda</h2>
+              <p>Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. DevOps, SRE ve Platform Mühendisliği alanlarına odaklanıyorum. AWS, CI/CD ve tam yığın (full-stack) geliştirme süreçlerinde deneyimliyim.</p>
+
+              <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                <li>AWS & Bulut Teknolojileri</li>
+                <li>CI/CD Süreçleri</li>
+                <li>React Native</li>
+                <li>DevOps & SRE</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* Projeler Bölümü */}

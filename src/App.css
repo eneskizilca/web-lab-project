@@ -291,7 +291,7 @@ footer {
   }
 
   /* Hakkımda yatay düzen */
-  #hakkimda {
+  .about-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -299,9 +299,8 @@ footer {
     gap: var(--space-lg);
   }
 
-  #hakkimda figure {
+  .about-content figure {
     flex-shrink: 0;
-    margin-right: var(--space-md);
   }
 
   /* Form butonu tam genişlik olmaktan çıkar */
