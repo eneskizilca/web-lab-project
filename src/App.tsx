@@ -27,7 +27,7 @@ function App() {
           {/* Sadece fotoğraf ve metinleri yan yana dizecek olan ana taşıyıcı */}
           <div className="about-content">
             <figure>
-              <img src="/profil.jpg" alt="Enes Kızılca'nın profil fotoğrafı" />
+              <img src="/profil.png" alt="Enes Kızılca'nın profil fotoğrafı" />
               <figcaption>Enes Kızılca</figcaption>
             </figure>
 
