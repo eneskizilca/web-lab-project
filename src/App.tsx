@@ -9,6 +9,7 @@ function App() {
       </a>
 
       <header>
+        <div className="site-title">Enes Kızılca</div>
         <nav aria-label="Ana navigasyon">
           <ul>
             <li><a href="#hakkimda">Hakkımda</a></li>
@@ -32,10 +33,11 @@ function App() {
 
           <h2>Hakkımda</h2>
           <p>Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. DevOps, SRE ve Platform Mühendisliği alanlarına odaklanıyorum. AWS, CI/CD ve tam yığın (full-stack) geliştirme süreçlerinde deneyimliyim.</p>
-          <ul>
+          <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
             <li>AWS & Bulut Teknolojileri</li>
             <li>CI/CD Süreçleri</li>
-            <li>React Native & Full-stack Geliştirme</li>
+            <li>React Native</li>
+            <li>DevOps & SRE</li>
           </ul>
         </section>
 

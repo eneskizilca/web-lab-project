@@ -87,29 +87,86 @@ button[type="submit"]:hover {
   padding: 0 1rem;
 }
 
+/* ===== HEADER & NAV (Flexbox) ===== */
 header {
-  background: var(--color-primary);
-  color: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: var(--space-sm);
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
-  color: white;
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  color: var(--color-text);
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast), color var(--transition-fast);
 }
 
-nav a:hover {
-  color: var(--color-secondary);
+nav a:hover,
+nav a:focus {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* ===== SKILL TAGS (Toolbar) ===== */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-md);
+}
+
+.skill-tags li {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+}
+
+/* ===== MOBILDE DIKEY YIGIN ===== */
+@media (max-width: 639px) {
+  header {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 section {
