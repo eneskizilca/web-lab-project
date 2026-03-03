@@ -44,22 +44,34 @@ function App() {
         {/* Projeler Bölümü */}
         <section id="projeler">
           <h2>Projelerim</h2>
+          <div className="project-grid">
 
-          <article>
-            <h3>ReklaGram - Influencer Marketing Platform</h3>
-            <p>Influencer'lar ile markaları buluşturan kapsamlı bir pazarlama platformu.</p>
-            <ul>
-              <li>Python, React, Docker, AWS S3, PostgreSQL</li>
-            </ul>
-          </article>
+            <article className="project-card">
+              <img src="/proje1.jpg" alt="ReklaGram projesi ekran görüntüsü" />
+              <h3>ReklaGram</h3>
+              <p>Influencer'lar ile markaları buluşturan kapsamlı bir pazarlama platformu.</p>
+              <ul className="skill-tags">
+                <li>Python</li>
+                <li>React</li>
+                <li>Docker</li>
+                <li>AWS S3</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </article>
 
-          <article>
-            <h3>Cloud-Native Serverless Voting App</h3>
-            <p>Bulut tabanlı, sunucusuz mimariyle tasarlanmış ölçeklenebilir oylama uygulaması.</p>
-            <ul>
-              <li>AWS (Lambda, API Gateway), PostgreSQL, React, Python</li>
-            </ul>
-          </article>
+            <article className="project-card">
+              <img src="/proje2.jpg" alt="Cloud-Native Serverless Voting App ekran görüntüsü" />
+              <h3>Serverless Voting App</h3>
+              <p>Bulut tabanlı, sunucusuz mimariyle tasarlanmış ölçeklenebilir oylama uygulaması.</p>
+              <ul className="skill-tags">
+                <li>AWS</li>
+                <li>PostgreSQL</li>
+                <li>React</li>
+                <li>Python</li>
+              </ul>
+            </article>
+
+          </div>
         </section>
 
         {/* İletişim Bölümü */}
