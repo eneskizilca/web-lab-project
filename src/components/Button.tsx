@@ -1,10 +1,11 @@
-export default function Button({ children, variant = "primary", size = "md", ...props }: any) {
-    const base = "inline-flex items-center justify-center font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none";
+export default function Button({ children, variant = "primary", size = "md", className = "", ...rest }: any) {
+
+    const base = "inline-flex items-center justify-center font-medium rounded-lg cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none";
 
     const variants: any = {
-        primary: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500 dark:bg-blue-500 dark:hover:bg-blue-400",
-        secondary: "bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-500 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600",
-        danger: "bg-red-600 text-white hover:bg-red-700 focus:ring-red-500 dark:bg-red-500 dark:hover:bg-red-400",
+        primary: "bg-primary text-white hover:opacity-90 focus:ring-primary dark:bg-primary dark:hover:opacity-80",
+        secondary: "bg-surface text-gray-800 border border-gray-300 hover:bg-gray-100 focus:ring-gray-500 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600",
+        danger: "bg-error text-white hover:opacity-90 focus:ring-error dark:bg-error dark:hover:opacity-80",
         ghost: "bg-transparent text-gray-700 hover:bg-gray-100 focus:ring-gray-400 dark:text-gray-300 dark:hover:bg-gray-800",
     };
 
@@ -15,7 +16,10 @@ export default function Button({ children, variant = "primary", size = "md", ...
     };
 
     return (
-        <button className={`${base} ${variants[variant]} ${sizes[size]} ${props.className || ""}`} {...props}>
+        <button
+            className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
+            {...rest}
+        >
             {children}
         </button>
     );
